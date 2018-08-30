@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/normal_space">
+
+    <RelativeLayout
+        android:id="@+id/rl_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/normal_space"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_text_size"
+            tool:text="历史记录" />
+
+        <ImageView
+            android:id="@+id/iv_toggle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title"
+            android:src="@drawable/ic_right" />
+
+
+        <TextView
+            android:id="@+id/enmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="编辑"
+            android:textSize="@dimen/search_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_hiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:src="@mipmap/icon_hide_recommend"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_seekeywords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/keyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部关键字"
+            android:textSize="@dimen/search_text_size" />
+
+        <ImageView
+
+            android:id="@+id/iv_key"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/keyWord"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/icon_show_recommend"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
