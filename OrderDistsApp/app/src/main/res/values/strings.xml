@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OrderDistsApp</string>
+    <string name="Extra_Regist_Phone_isNull">商家代码不允许为空</string>
+    <string name="Extra_Regist_Phone_isErrorType">手机号格式不正确</string>
+    <string name="Extra_UserName_isNull">用户名不允许为空</string>
+    <string name="Extra_Pwd_isNull">密码不允许为空</string>
+    <string name="Extra_Login_Ok">登录成功</string>
+    <string name="Extra_Login_fail">登录失败</string>
+    <string name="Extra_Regist_GetVerityCode">获取验证码</string>
+    <string name="Extra_Country_Code">86</string>
+    <string name="Vertify_Success_Code">成功得到验证码</string>
+    <string name="Extra_Fail_sendCode">验证码发送失败</string>
+    <string name="Extra_Success_Vertify">验证码通过验证</string>
+    <string name="Extra_Error_Vertify">验证码错误，请重试</string>
+    <string name="Extra_Get_VertiCode">获取验证码</string>
+</resources>

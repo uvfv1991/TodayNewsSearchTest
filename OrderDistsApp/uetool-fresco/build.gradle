@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+    }
+    buildToolsVersion "27.0.3"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile project(':uetool-base')
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    //implementation 'com.facebook.fresco:fresco:0.6.0'
+}
+

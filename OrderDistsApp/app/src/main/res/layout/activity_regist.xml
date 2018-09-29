@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fwrl_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/ctl"
+        layout="@layout/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </include>
+
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/ctl"
+        android:background="#27FFFF"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/tv_vertify_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="手机验证" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_arraw_right_white" />
+
+
+        <TextView
+            android:id="@+id/tv_fully_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.8"
+            android:text="信息完善" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_arraw_right_white" />
+
+
+        <TextView
+            android:id="@+id/tv_success_regist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.8"
+            android:text="注册成功" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_state">
+
+
+    </FrameLayout>
+
+
+
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout>
+
+
