@@ -31,7 +31,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/et_phone"
+                android:id="@+id/et_firmname"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dip"
@@ -61,7 +61,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/et_password"
+                android:id="@+id/et_sel_indu"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dip"

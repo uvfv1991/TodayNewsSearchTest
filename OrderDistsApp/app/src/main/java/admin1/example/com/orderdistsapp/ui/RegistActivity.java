@@ -16,6 +16,7 @@ import admin1.example.com.orderdistsapp.eventbus.EventContants;
 import admin1.example.com.orderdistsapp.eventbus.IntentToNextFragmentEvent;
 import admin1.example.com.orderdistsapp.ui.fragment.RegistStepFragment.FullyInfoFragment;
 import admin1.example.com.orderdistsapp.ui.fragment.RegistStepFragment.RegistContainerFragment;
+import me.ele.uetool.UETool;
 
 /**
  * @Created by admin
@@ -30,8 +31,9 @@ public class RegistActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
 
         EventBusUtils.register(this);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        UETool.showUETMenu(1000);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_regist);
